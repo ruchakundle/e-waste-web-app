@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recycle Your E-Waste</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin-top: 50px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2e7d32;
+    }
+
+    .btn-success {
+      background-color: #2e7d32;
+      border-color: #2e7d32;
+    }
+
+    .terms-box {
+      background-color: #f8f9fa;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+
+    .form-check-label {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="form-title">Recycle Your E-Waste</h2>
+  <form id="recycleForm">
+
+    <!-- Name -->
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Address -->
+    <div class="mb-3">
+      <label for="address" class="form-label">Pickup Address</label>
+      <textarea class="form-control" id="address" rows="3" placeholder="Your complete address" required></textarea>
+    </div>
+
+    <!-- Type of E-Waste -->
+    <div class="mb-3">
+      <label for="type" class="form-label">Type of E-Waste</label>
+      <select class="form-select" id="type" required>
+        <option value="">Choose...</option>
+        <option>Mobile Phones</option>
+        <option>Laptops/PCs</option>
+        <option>Wires/Cables</option>
+        <option>Old Batteries</option>
+        <option>Household Appliances</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <!-- Condition -->
+    <div class="mb-3">
+      <label for="condition" class="form-label">Condition of Product</label>
+      <select class="form-select" id="condition" required>
+        <option value="">Choose...</option>
+        <option>Working</option>
+        <option>Partially Damaged</option>
+        <option>Completely Broken</option>
+      </select>
+    </div>
+
+    <!-- Terms & Conditions -->
+    <div class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" id="terms" required>
+      <label class="form-check-label" for="terms">
+        I agree to the Terms and Conditions below
+      </label>
+    </div>
+
+    <div class="terms-box mb-4">
+      <strong>Terms & Conditions:</strong>
+      <ul class="mb-0">
+        <li>Items once submitted for recycling will not be returned.</li>
+        <li>Please ensure all personal data is wiped before submission.</li>
+        <li>Only non-functional or unused items will be collected.</li>
+        <li>Collection is subject to area availability and may be rescheduled.</li>
+        <li>No monetary compensation or refund will be provided for donated/recycled items.</li>
+      </ul>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="d-grid">
+      <button type="submit" class="btn btn-success">Submit Recycling Request</button>
+    </div>
+
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

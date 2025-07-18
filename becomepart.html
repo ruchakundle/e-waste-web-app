@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Project Registration</title>
+
+  <!-- 🌿 CSS Styling -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f9f1;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(67, 160, 71, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: 500;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .gender-options {
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #43a047;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    footer a {
+      color: #388e3c;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 🌱 NGO Logo -->
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/128/7829/7829198.png" alt="NGO Logo">
+    </div>
+
+    <!-- 📝 Heading -->
+    <h2>Become Part Of This Family!</h2>
+
+    <!-- 📋 Registration Form -->
+    <form method="post" action="#" name="reg_form">
+
+      <label for="fullname">Enter Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+
+      <label for="dob">Enter DOB:</label>
+      <input type="date" id="dob" name="dob">
+
+      <label>Select your gender:</label><br>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+
+      <label for="email">Enter your E-mail ID:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com">
+
+      <label for="contact">Enter your contact number:</label>
+      <input type="number" id="contact" name="contact" placeholder="1234567890">
+
+      <button type="submit" id="a">Submit</button>
+    </form>
+  </div>
+
+  <!-- 📝 Attribution -->
+  <footer>
+    Icon by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" target="_blank">Vitaly Gorbachev</a> from 
+    <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

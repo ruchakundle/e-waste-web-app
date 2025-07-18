@@ -1,0 +1,49 @@
+
+  /* 🌿 Navbar Custom Styling */
+  .navbar {
+    background-color: #1b1f1d !important; /* Dark Greenish Background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #81c784 !important; /* Light Green */
+  }
+
+  .navbar-nav .nav-link {
+    color: #d0f0c0 !important;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #a5d6a7 !important;
+    transform: scale(1.05);
+  }
+
+  .btn.btn-primary {
+    margin-left: 10px;
+    background-color: #43a047;
+    border: none;
+    transition: 0.3s ease;
+  }
+
+  .btn.btn-primary:hover {
+    background-color: #2e7d32;
+  }
+
+  /* 🔽 Mobile Toggle Button Color */
+  .navbar-toggler {
+    border-color: #81c784;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2881, 200, 132, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* 💻 Spacing around Navbar */
+  .upper_c {
+    margin-bottom: 20px;
+  }
+
